@@ -4,15 +4,282 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./style.css" />
 		<title>Project - Admin Dashboard</title>
 	</head>
 	<body>
 		<div class="container">
-			<aside class="sidebar"></aside>
+			<div class="sidebar">
+				<div class="branding">
+					<a href="#">
+						<span class="icon"><i class="bx bxs-dashboard"></i></span>
+						<span class="text">Dashboard</span>
+					</a>
+				</div>
+				<ul class="navigation-upper">
+					<li>
+						<a href="#">
+							<span class="icon"><i class='bx bxs-home'></i></span>
+							<span class="text">Home</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i class='bx bxs-user-detail' ></i></span>
+							<span class="text">Profile</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i class='bx bxs-message' ></i></span>
+							<span class="text">Messages</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i class='bx bx-history' ></i></span>
+							<span class="text">History</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i class='bx bx-task' ></i></span>
+							<span class="text">Tasks</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i class='bx bxs-group' ></i></span>
+							<span class="text">Community</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="navigation-lower">
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class='bx bxs-cog'></i></span>
+						<span class="text">Settings</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class='bx bx-support' ></i></span>
+						<span class="text">Support</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class='bx bxs-check-shield' ></i></span>
+						<span class="text">Privacy</span>
+					</a>
+				</li>
+
+				</ul>
+			</div>
+
 			<div class="header-main">
-				<header class="header"></header>
-				<main class="main-content"></main>
+				<div class="header">
+					<div class="upper">
+						<div class="search-bar">
+							<label for="search"><i class='bx bx-search'></i></label>
+							
+							<input id='search' name='search' type="text">
+						</div>
+						<div class="user-container">
+							<button class="btn-icon"><i class='bx bx-bell' ></i></button>
+							<div class="avatar"></div>
+							<p class="user">Paul Calzado</h1>
+						</div>
+					</div>		
+					<div class="lower">
+						<div class="left">
+							<div class="avatar-big"></div>
+							<div class="greeting">
+								<p>Hi there,</p>
+								<h2>Paul Calzado (@skullzado)</h2>
+							</div>
+						</div>
+						<div class="right">
+							<button class='btn'>New</button>
+							<button class='btn'>Upload</button>
+							<button class='btn'>Share</button>
+						</div>
+					</div>
+				</div>
+				<div class="main-content">
+					<div class="projects">
+						<h2>Your Projects</h2>
+						<div class="projects-container">
+							<div class="card">
+								<div class="card-upper">
+									<h3>Super Cool Project</h3>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sequi natus. Quam reiciendis quisquam itaque.</p>
+								</div>
+								<div class="card-lower">
+									<button class="btn-icon">
+										<i class='bx bx-star' ></i>
+									</button>
+									<button class="btn-icon">
+										<i class='bx bx-show' ></i>
+									</button>
+									<button class="btn-icon">
+										<i class='bx bx-share-alt' ></i>
+									</button>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-upper">
+									<h3>Less Cool Project</h3>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								</div>
+								<div class="card-lower">
+									<button class="btn-icon">
+										<i class='bx bx-star' ></i>
+									</button>
+									<button class="btn-icon">
+										<i class='bx bx-show' ></i>
+									</button>
+									<button class="btn-icon">
+										<i class='bx bx-share-alt' ></i>
+									</button>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-upper">
+									<h3>Impossible App</h3>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sequi natus.</p>
+								</div>
+								<div class="card-lower">
+									<button class="btn-icon">
+										<i class='bx bx-star' ></i>
+									</button>
+									<button class="btn-icon">
+										<i class='bx bx-show' ></i>
+									</button>
+									<button class="btn-icon">
+										<i class='bx bx-share-alt' ></i>
+									</button>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-upper">
+									<h3>Easy Peasy App</h3>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sequi natus. Quam reiciendis quisquam itaque. Explicabo impedit reiciendis sunt nobis, quos voluptate perspiciatis.</p>
+								</div>
+								<div class="card-lower">
+									<button class="btn-icon">
+										<i class='bx bx-star' ></i>
+									</button>
+									<button class="btn-icon">
+										<i class='bx bx-show' ></i>
+									</button>
+									<button class="btn-icon">
+										<i class='bx bx-share-alt' ></i>
+									</button>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-upper">
+									<h3>Ad Blocker</h3>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sequi natus. Quam reiciendis quisquam itaque. Explicabo impedit reiciendis sunt nobis, quos voluptate perspiciatis.</p>
+								</div>
+								<div class="card-lower">
+									<button class="btn-icon">
+										<i class='bx bx-star' ></i>
+									</button>
+									<button class="btn-icon">
+										<i class='bx bx-show' ></i>
+									</button>
+									<button class="btn-icon">
+										<i class='bx bx-share-alt' ></i>
+									</button>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-upper">
+									<h3>Money Maker</h3>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sequi natus. Quam reiciendis quisquam itaque. Explicabo impedit reiciendis sunt nobis, quos voluptate perspiciatis. Libero aliquid magni explicabo nobis voluptatem. Quaerat.</p>
+								</div>
+								<div class="card-lower">
+									<button class="btn-icon">
+										<i class='bx bx-star' ></i>
+									</button>
+									<button class="btn-icon">
+										<i class='bx bx-show' ></i>
+									</button>
+									<button class="btn-icon">
+										<i class='bx bx-share-alt' ></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="announcements-trending">
+						<div class="announcements">
+							<h2>Announcements</h2>
+							<ul class="announcement-list">
+								<li class="announcement-list-item">
+									<h4>
+										Site Maintenance
+									</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, numquam fuga.</p>
+								</li>
+								<hr />
+								<li class="announcement-list-item">
+									<h4>
+										Community Share Day
+									</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, numquam fuga.</p>
+								</li>		
+								<hr />
+								<li class="announcement-list-item">
+									<h4>
+										Updated Privacy Policy
+									</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, numquam fuga.</p>
+								</li>
+							</ul>
+						</div>
+						<div class="trending">
+							<h2>Trending</h2>
+							<ul class="users-list">
+								<li class="users-list-item">
+									<div class="avatar avatar-red"></div>
+									<div class="user-name">
+										<p>@first</p>
+										<p>First User</p>
+									</div>
+								</li>
+								<li class="users-list-item">
+									<div class="avatar avatar-blue"></div>
+									<div class="user-name">
+										<p>@second</p>
+										<p>Second User</p>
+									</div>
+								</li>
+								<li class="users-list-item">
+									<div class="avatar avatar-green"></div>
+									<div class="user-name">
+										<p>@third</p>
+										<p>Third User</p>
+									</div>
+								</li>
+								<li class="users-list-item">
+									<div class="avatar avatar-pink"></div>
+									<div class="user-name">
+										<p>@fourth</p>
+										<p>Fourth User</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
